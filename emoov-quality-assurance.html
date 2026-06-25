@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Detalhes do projeto EMoov Quality Assurance, com planejamento, execução e evidências de testes manuais de API."
+    />
+    <title>Portfólio | EMoov Quality Assurance</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="Página inicial do portfólio"
+        >
+          <span class="logo-mark">DEV</span>
+          <span>Juan Santos | Portfolio</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <a class="top-cta" href="contato.html">Vamos Conversar</a>
+      </nav>
+    </header>
+
+    <main class="project-detail">
+      <a class="back-link" href="projetos.html">← Voltar para Projetos</a>
+
+      <section class="detail-hero section-reveal">
+        <h1>EMoov Quality Assurance</h1>
+        <p>
+          Projeto de testes manuais da API REST do sistema EMoov, com foco em
+          planejamento, execução, evidências e validação funcional de endpoints.
+        </p>
+      </section>
+
+      <section class="detail-showcase section-reveal">
+        <div class="detail-screen detail-screen-qa">
+          <img
+            src="img/emoov-qa.png"
+            alt="Capa do projeto EMoov Quality Assurance"
+          />
+        </div>
+      </section>
+
+      <section class="detail-grid section-reveal">
+        <article class="detail-panel detail-panel-large">
+          <h2>O Desafio</h2>
+          <p>
+            Validar endpoints da API REST do EMoov por meio de testes manuais,
+            garantindo organização dos cenários, rastreabilidade das evidências
+            e atenção à qualidade das respostas retornadas.
+          </p>
+        </article>
+
+        <aside class="detail-panel">
+          <h2>Tecnologias</h2>
+          <div class="tag-list">
+            <span>NestJS</span>
+            <span>TypeScript</span>
+            <span>Prisma ORM</span>
+            <span>PostgreSQL</span>
+            <span>JWT</span>
+            <span>Thunder Client</span>
+            <span>QA</span>
+          </div>
+        </aside>
+
+        <article class="detail-panel detail-panel-large">
+          <h2>A Solução</h2>
+          <p>
+            Foram organizados casos de teste para validar fluxos da API,
+            respostas esperadas, autenticação, regras de negócio e comportamento
+            dos principais módulos do sistema.
+          </p>
+          <ul class="detail-list">
+            <li>Planejamento dos testes manuais de API.</li>
+            <li>Criação e execução de casos de teste.</li>
+            <li>Registro de evidências dos testes realizados.</li>
+            <li>Validação funcional de endpoints com Thunder Client.</li>
+          </ul>
+        </article>
+
+        <aside class="detail-panel repository-panel">
+          <h2>Repositório</h2>
+          <div
+            class="screenshot-grid screenshot-grid-emoov"
+            aria-label="Repositório do projeto EMoov Quality Assurance"
+          >
+            <button
+              class="screenshot-card repository-card"
+              type="button"
+              data-qa-repository-modal
+              aria-label="Abrir informações do repositório GitHub"
+            >
+              <span class="screenshot-icon" aria-hidden="true">&#128187;</span>
+              <span>Repositório GitHub</span>
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <div class="emoov-modal" id="qaRepositoryModal" aria-hidden="true">
+      <div class="emoov-modal__overlay" data-qa-modal-close></div>
+      <section
+        class="emoov-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="qaRepositoryModalTitle"
+        tabindex="-1"
+      >
+        <button
+          class="emoov-modal__close"
+          type="button"
+          aria-label="Fechar modal"
+          data-qa-modal-close
+        >
+          ×
+        </button>
+        <div class="emoov-modal__content" id="qaRepositoryModalContent"></div>
+      </section>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo">
+      ↑
+    </button>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Portfólio pessoal. Foco em back-end, Java e qualidade de software.
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/emoov-qa-repository.js"></script>
+  </body>
+</html>

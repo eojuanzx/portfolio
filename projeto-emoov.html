@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Detalhes do projeto EMoov, sistema de mobilidade interna e controle de frota desenvolvido como TCC."
+    />
+    <title>Portfólio | Projeto EMoov</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegação principal">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="Página inicial do portfólio"
+        >
+          <span class="logo-mark">DEV</span>
+          <span>Juan Santos | Portfolio</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="sobre.html">Sobre mim</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+          <li><a href="habilidades.html">Habilidades</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+        <a class="top-cta" href="contato.html">Vamos Conversar</a>
+      </nav>
+    </header>
+
+    <main class="project-detail">
+      <a class="back-link" href="projetos.html">← Voltar para Projetos</a>
+
+      <section class="detail-hero section-reveal">
+        <h1>EMoov</h1>
+        <p>
+          Sistema de mobilidade interna e controle de frota desenvolvido como
+          TCC, com foco no gerenciamento de veículos, motoristas, funcionários e
+          corridas.
+        </p>
+      </section>
+
+      <section class="detail-showcase section-reveal">
+        <div class="detail-screen detail-screen-emoov">
+          <img src="img/emoov-logo.png" alt="Logo do projeto EMoov" />
+        </div>
+      </section>
+
+      <section class="detail-grid section-reveal">
+        <article class="detail-panel detail-panel-large">
+          <h2>O Desafio</h2>
+          <p>
+            Organizar o fluxo de solicitações de corridas e o controle de frota
+            em um ambiente digital, facilitando a gestão de veículos, motoristas
+            e usuários envolvidos no processo de mobilidade interna.
+          </p>
+        </article>
+
+        <aside class="detail-panel">
+          <h2>Tecnologias</h2>
+          <div class="tag-list">
+            <span>NestJS</span>
+            <span>Next.js</span>
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>TypeScript</span>
+            <span>Prisma ORM</span>
+            <span>PostgreSQL</span>
+            <span>Supabase</span>
+            <span>JWT</span>
+            <span>Socket.IO</span>
+          </div>
+        </aside>
+
+        <article class="detail-panel detail-panel-large">
+          <h2>A Solução</h2>
+          <p>
+            O EMoov foi estruturado como uma solução completa para cadastro,
+            controle e acompanhamento de corridas, combinando back-end,
+            regras de negócio, banco de dados e app mobile.
+          </p>
+          <ul class="detail-list">
+            <li>
+              Gerenciamento de veículos, motoristas, funcionários e
+              solicitações.
+            </li>
+            <li>Autenticação com JWT para controle de acesso.</li>
+            <li>Banco de dados PostgreSQL com Prisma ORM.</li>
+            <li>Comunicação em tempo real com Socket.IO.</li>
+            <li>
+              Back-end com NestJS, banco de dados PostgreSQL e aplicação mobile
+              com React Native e Expo.
+            </li>
+          </ul>
+        </article>
+
+        <article class="detail-panel">
+          <h2>Observação</h2>
+          <p>
+            Este projeto está em processo de comercialização e, por esse motivo,
+            seu código-fonte não está disponível publicamente. As informações
+            apresentadas representam apenas uma visão geral da solução
+            desenvolvida.
+          </p>
+        </article>
+
+        <aside class="detail-panel project-preview-panel">
+          <h2>Visualização do projeto</h2>
+          <div
+            class="screenshot-grid screenshot-grid-emoov"
+            aria-label="Demonstrações do projeto EMoov"
+          >
+            <button
+              class="screenshot-card"
+              type="button"
+              data-emoov-modal="admin"
+            >
+              <span class="screenshot-icon" aria-hidden="true">&#128421;</span>
+              <span>Painel Administrativo</span>
+            </button>
+            <button
+              class="screenshot-card"
+              type="button"
+              data-emoov-modal="mobile"
+            >
+              <span class="screenshot-icon" aria-hidden="true">&#128241;</span>
+              <span>App Mobile</span>
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <div class="emoov-modal" id="emoovModal" aria-hidden="true">
+      <div class="emoov-modal__overlay" data-modal-close></div>
+      <section
+        class="emoov-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="emoovModalTitle"
+        tabindex="-1"
+      >
+        <button
+          class="emoov-modal__close"
+          type="button"
+          aria-label="Fechar modal"
+          data-modal-close
+        >
+          ×
+        </button>
+        <div class="emoov-modal__content" id="emoovModalContent"></div>
+      </section>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="Voltar ao topo">
+      ↑
+    </button>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Portfólio pessoal. Foco em back-end, Java e qualidade de software.
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/emoov-demo-links.js"></script>
+    <script src="js/emoov-project.js"></script>
+  </body>
+</html>
